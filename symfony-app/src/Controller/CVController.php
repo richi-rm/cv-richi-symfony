@@ -21,7 +21,7 @@ class CVController extends AbstractController
     {
         return $this->render('cv.html.twig', [
             'me' => ($me = $this->dataReader->read('me')),
-            'signature' => 'CV ' . $me['name'] . ' made with Symfony ' . Kernel::VERSION . ', last updated: ' . ($this->dataReader->read('signature'))['lastUpdated']
+            'signature' => 'CV ' . $me['name'] . ' built with Symfony ' . Kernel::VERSION . ', last updated: ' . ($this->dataReader->read('signature'))['lastUpdated']
         ]);
     }
 

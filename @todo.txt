@@ -12,4 +12,6 @@
  - la foto, mi careto
  - poner imagenes en movimiento suaves
  - hacerlo en ingles
- - hacerlo para movil
+ x hacerlo para movil
+ - que tenga un enlace descargable en PDF
+ 
