@@ -11,7 +11,7 @@ services:
     image: nginx:alpine
     container_name: cv-richi-symfony-nginx
     ports:
-      - "9090:80"
+      - "8080:80"
     volumes:
       - ./config/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
       - ./symfony-app:/var/www/html
