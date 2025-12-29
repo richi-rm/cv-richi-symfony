@@ -1,0 +1,15 @@
+@todo
+
+ x la fuente tipografica
+ x los meses de experiencia
+ - las bolitas anterior siguiente de otra manera
+ - la barra de experiencia (con bloques por meses), sabiendo que son 600 px, de un color tenue a un azul fuerte
+ - que las letras CV del svg del favicon se vean mas grandes
+ - los subrayados en los enlaces no me gustan
+ - revisar los meses en los contratos pdf
+ - contacto
+ - comparar los 2 curriculums
+ - la foto, mi careto
+ - poner imagenes en movimiento suaves
+ - hacerlo en ingles
+ - hacerlo para movil

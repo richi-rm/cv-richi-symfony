@@ -1,0 +1,15 @@
+<div class="section">
+   <div class="section-title center">
+      {% if (experience.index > 0) %}<a class="previous" href="" data-action="click->render#render" data-url="{{ path('app_experience', {'index':experience.index-1}) }}">&nbsp;&lt;&lt;&nbsp;</a>{% endif %}
+      <b>Experiencia en {{ experience.company }}</b><br />
+      <span class="location">{{ experience.city }} ({{ experience.startDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }} - {% if experience.endDate == '' %}Actualmente{% else %}{{ experience.endDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }}{% endif %})</span>
+      {% if (experience.index < experiencesLastIndex) %}<a class="next" href="" data-action="click->render#render" data-url="{{ path('app_experience', {'index':experience.index+1}) }}">&nbsp;&gt;&gt;&nbsp;</a>{% endif %}
+   </div>
+   <div class="section-content">
+      <div class="experience">
+         <div class="job-title">Trabajé como <b>{{ experience.jobTitle }}</b>.</div>
+         <div class="description">{{ experience.description }}</div>
+         {% if experience.technologies is not empty %}<div class="technologies">Tecnologías y herramientas usadas: <i>{{ experience.technologies|join(', ') }}</i>.</div>{% endif %}
+      </div>
+   </div>
+</div>

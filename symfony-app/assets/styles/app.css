@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.center {
+    text-align: center;
+}
+
+body {
+    background-color: white;
+    color: #4e5e80;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    margin: 0;
+}
+
+a {
+    color: #6183d0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header .intro {
+    background-color: #323b4c;
+    padding: 20px;
+    color: white;
+}
+
+header .intro .intro-name {
+    font-size: 2em;
+}
+
+header ul.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+header ul.nav-menu li {
+    margin: 40px 20px 30px 20px;
+}
+
+header ul.nav-menu li a {
+    background-color: #b0b0b0;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+    font-size: 0.9em;
+}
+
+header ul.nav-menu li a:hover {
+    background-color: #323b4c;
+    text-decoration: underline;
+}
+
+main .content {
+    width: 600px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+main .content .section .section-title {
+    border-bottom: solid 1px;
+    padding: 10px 0 10px 0;
+    margin-bottom: 10px;
+    position: relative;
+    font-weight: bold;
+}
+
+main .content .section .section-title a.previous {
+    background-color: #b0b0b0;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    position: absolute;
+    left: -40px;
+    top: 5px;
+}
+
+main .content .section .section-title a.previous:hover {
+    text-decoration: none;
+}
+
+main .content .section .section-title a.next {
+    background-color: #b0b0b0;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    position: absolute;
+    right: -40px;
+    top: 5px;
+}
+
+main .content .section .section-title a.next:hover {
+    text-decoration: none;
+}
+
+main .content .section .section-title .location {
+    font-size: 0.8em;
+}
+
+main .content .section .section-content {
+    font-size: 0.9em;
+}
+
+main .content .section .section-content ul.education {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+main .content .section .section-content .education .education-item .degree {
+    font-weight: bold;
+}
+
+main .content .section .section-content .experience .job-title {
+    margin: 10px 0 10px 0;
+}
+
+main .content .section .section-content .experience .technologies {
+    margin: 10px 0 10px 0;
+}
+
+footer .signature {
+    background-color: #a0a0a0;
+    color: white;
+    font-size: 0.8em;
+    padding: 10px 0 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

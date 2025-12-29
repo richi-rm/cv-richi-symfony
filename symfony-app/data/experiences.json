@@ -1,0 +1,100 @@
+{
+  "experienceProasa": {
+    "company": "PROASA",
+    "city": "Córdoba",
+    "startDate": "1997_11",
+    "endDate": "1998_01",
+    "jobTitle": "C Developer (becario)",
+    "description": "Trabajé en el desarrollo de bases de datos Microsoft Access. También desarrollé una calculadora gráfica para consola MS-DOS usando Borland Turbo C.",
+    "technologies": [
+      "C",
+      "Microsoft Access"
+    ]
+  },
+  "experienceKingSilver": {
+    "company": "King Silver",
+    "city": "Córdoba",
+    "startDate": "1998_06",
+    "endDate": "2003_06",
+    "jobTitle": "ASP & C Developer",
+    "description": "Desarrollé un portal web, usando ASP y Microsoft Access, cuyo cometido era publicitar empresas (una guía online de empresas). También desarrollé aplicaciones recolectoras de información en Internet (crawlers), programadas en C.",
+    "technologies": [
+      "ASP",
+      "C",
+      "Microsoft Access"
+    ]
+  },
+  "experienceUco": {
+    "company": "Rectorado de la Universidad de Córdoba",
+    "city": "Córdoba",
+    "startDate": "2006_06",
+    "endDate": "2010_04",
+    "jobTitle": "PHP Developer",
+    "description": "Desarrollé y mantuve una aplicación web PHP / MySQL para que los profesores de la Universidad pudiesen ofertar sus cursos extraacadémicos. También realicé algunos trabajos en Java y Visual Basic.",
+    "technologies": [
+      "PHP",
+      "MySQL",
+      "Java",
+      "Visual Basic"
+    ]
+  },
+  "experienceBilbomatica": {
+    "company": "Bilbomática",
+    "city": "Madrid",
+    "startDate": "2010_06",
+    "endDate": "2013_04",
+    "jobTitle": "PHP Developer",
+    "description": "Trabajé desarrollando evolutivos, corrigiendo bugs y construyendo sites desde cero usando PHP, Zend Framework 1 y Subversion. Trabajé en la aplicación ACCEDA del Ministerio de Hacienda y Administraciones Públicas. También construí desde cero, con Symfony 2, dos aplicaciones para hacer encuestas a los ayuntamientos de España, sobre su equipamiento tecnológico (aplicaciones IRIA y CAE).",
+    "technologies": [
+      "PHP",
+      "MySQL",
+      "JavaScript",
+      "Zend Framework 1",
+      "Symfony 2",
+      "Subversion"
+    ]
+  },
+  "experienceSermicro": {
+    "company": "Grupo SERMICRO",
+    "city": "Madrid",
+    "startDate": "2013_06",
+    "endDate": "2014_07",
+    "jobTitle": "PHP Developer",
+    "description": "Trabajé en el desarrollo de una aplicación web (un dashboard / cuadro de mandos) construida sobre PHP y Symfony 2 para medir las ventas de teléfonos móviles en las distintas tiendas de la empresa Telecor (Grupo El Corte Inglés).",
+    "technologies": [
+      "PHP",
+      "MySQL",
+      "Symfony 2",
+      "Subversion"
+    ]
+  },
+  "experienceSms": {
+    "company": "Grupo SMS",
+    "city": "Madrid",
+    "startDate": "2014_11",
+    "endDate": "2015_04",
+    "jobTitle": "Webapp Analyst",
+    "description": "Trabajé en el diseño de una aplicación web (PHP, Symfony) y su base de datos (MySQL) para llevar un control centralizado de las líneas telefónicas y de telecomunicaciones de los colegios y hospitales públicos de la Comunidad de Madrid, gestionadas por la Agencia de Informática y Comunicaciones de la Comunidad de Madrid.",
+    "technologies": [
+    ]
+  },
+  "experienceNateevo": {
+    "company": "VASS NATEEVO",
+    "city": "Alcobendas, Madrid",
+    "startDate": "2015_09",
+    "endDate": "2024_04",
+    "jobTitle": "PHP Developer",
+    "description": "Mis funciones en NATEEVO fueron las de desarrollar evolutivos, corregir bugs y desarrollar sites desde cero, construida la parte back sobre PHP, WordPress o Drupal. Trabajé en webs de clientes importantes como: Aldeas Infantiles, BBVA, Coca-Cola European Partners o MAPFRE.",
+    "technologies": [
+      "PHP",
+      "MySQL",
+      "JavaScript",
+      "Drupal",
+      "WordPress",
+      "Symfony",
+      "Zend Framework",
+      "Docker",
+      "git"
+    ]
+  }
+}

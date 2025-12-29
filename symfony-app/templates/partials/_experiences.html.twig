@@ -1,0 +1,16 @@
+<div class="section">
+   <div class="section-title center">
+      Experiencia profesional
+   </div>
+   <div class="section-content">
+      <ul class="experiences">
+         {% for experience in experiences|reverse %}
+            {% if experience.endDate == '' %}
+               <li><a class="bold" href="" data-action="click->render#render" data-url="{{ path('app_experience', {'index':experience.index}) }}">{{ experience.company }} ({{ experience.startDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }} - Actualmente)</a></li>
+            {% else %}
+               <li><a href="" data-action="click->render#render" data-url="{{ path('app_experience', {'index':experience.index}) }}">{{ experience.company }} ({{ experience.startDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }} - {{ experience.endDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }})</a></li>
+            {% endif %}
+         {% endfor %}
+      </ul>
+   </div>
+</div>

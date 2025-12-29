@@ -1,0 +1,15 @@
+<div class="section">
+   <div class="section-title center">
+      Formación
+   </div>
+   <div class="section-content">
+      <ul class="education">
+         {% for educationItem in education %}
+         <li class="education-item">
+            <span class="degree">{{ educationItem.degree }}</span> ({{ educationItem.startDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }} - {{ educationItem.endDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }})<br />
+            <span class="institution">{{ educationItem.institution }}</span>
+         </li>
+         {% endfor %}
+      </ul>
+   </div>
+</div>

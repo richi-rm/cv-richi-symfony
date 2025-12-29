@@ -1,0 +1,63 @@
+{# templates/cv.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ me.name }} - {{ me.title }}{% endblock %}
+
+{% block body %}
+
+   <div {{ stimulus_controller('render') }}>
+
+      <header>
+
+<!--
+         <div id="image">
+            <img src="{{ asset('images/ricardo-ruiz-martinez.jpg') }}" alt="{{ me.name }}" width="200" height="200" />
+         </div>
+-->
+
+         <div class="intro center">
+            <span class="intro-name">{{ me.name }}</span><br />
+            {{ me.title }}<br />
+            <br />
+            CURRICULUM VITAE
+         </div>
+
+         <nav>
+            <ul class="nav-menu">
+               <li>
+                   <a href="" data-action="click->render#render" data-url="{{ path('app_partial', {'name':'profile'}) }}">Presentación</a>
+               </li>
+               <li>
+                   <a href="" data-action="click->render#render" data-url="{{ path('app_experiences') }}">Experiencia</a>
+               </li>
+               <li>
+                   <a href="" data-action="click->render#render" data-url="{{ path('app_education') }}">Formación</a>
+               </li>
+               <li>
+                   <a href="" data-action="click->render#render" data-url="{{ path('app_contact') }}">Contacto</a>
+               </li>
+            </ul>
+         </nav>
+
+      </header>
+
+      <main>
+
+         <section class="content" data-render-target="content">
+            {{ include('partials/_profile.html.twig') }}
+         </section>
+
+      </main>
+
+      <footer>
+
+         <div class="signature center">
+            {{ signature }}
+         </div>
+
+      </footer>
+
+   </div>
+
+{% endblock %}
