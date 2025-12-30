@@ -1,5 +1,9 @@
 @media screen and (min-width: 900px) {
 
+    .hide-mobile {
+        display: block;
+    }
+
     header .photo {
         display: block;
         position: absolute;
@@ -19,7 +23,7 @@
     }
 
     header ul.nav-menu {
-        gap: 18px;
+        gap: 10px;
         margin: 25px 0 25px 0;
     }
 
