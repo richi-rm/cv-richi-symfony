@@ -14,4 +14,4 @@
  - hacerlo en ingles
  x hacerlo para movil
  - que tenga un enlace descargable en PDF
- 
+ - el fondo del svg favicon de otro color
