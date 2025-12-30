@@ -1,3 +1,5 @@
+git pull
+cd symfony-app
 composer install --no-dev --optimize-autoloader
 composer dump-env prod
 php bin/console asset-map:compile
