@@ -12,3 +12,6 @@ RUN echo "display_errors=Off" >> "$PHP_INI_DIR/conf.d/error-logging.ini" && \
 
 # Usar la configuración de producción por defecto
 RUN cp "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
+
+# Instalamos composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
