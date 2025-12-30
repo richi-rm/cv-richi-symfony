@@ -31,6 +31,16 @@ a:hover {
     text-decoration: underline;
 }
 
+ul {
+    text-align: left;
+}
+
+td {
+    text-align: left;
+    vertical-align: top;
+    padding: 5px;
+}
+
 header .intro {
     background-color: #323b4c;
     padding: 20px;
@@ -38,14 +48,14 @@ header .intro {
 }
 
 header .intro .intro-name {
-    font-size: 2em;
+    font-size: 1.6em;
 }
 
 header ul.nav-menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 7px;
     list-style: none;
     padding: 0;
     margin: 13px 0 13px 0;
@@ -61,16 +71,12 @@ header ul.nav-menu li a {
     padding: 10px;
     text-decoration: none;
     transition: background-color 0.5s ease;
-    font-size: 0.9em;
+    font-size: 0.6em;
 }
 
 header ul.nav-menu li a:hover {
     background-color: #323b4c;
     text-decoration: underline;
-}
-
-main {
-    margin-bottom: 100px;
 }
 
 main .content {
@@ -118,6 +124,17 @@ main .content .section .section-title .location {
     font-size: 0.8em;
 }
 
+main .content .section .section-content .contact img.contact-icon {
+    width: 20px;
+    height: 20px;
+}
+
+main .content .section .section-content .contact img.external-link {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
 main .content .section .section-content {
     font-size: 0.9em;
 }
@@ -138,14 +155,4 @@ main .content .section .section-content .experience .job-title {
 
 main .content .section .section-content .experience .technologies {
     margin: 10px 0 10px 0;
-}
-
-footer .signature {
-    background-color: #d0d0d0;
-    color: white;
-    font-size: 0.8em;
-    padding: 10px 0 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }

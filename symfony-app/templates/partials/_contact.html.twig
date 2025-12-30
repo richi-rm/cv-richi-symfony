@@ -6,24 +6,22 @@
       <table class="contact">
          <tbody>
             <tr>
-               <td class="">Teléfono</td>
+               <td class=""><img class="contact-icon" src="{{ asset('images/phone.svg') }}" alt="Teléfono"></td>
                <td>{{ me.phone }}</td>
             </tr>
             <tr>
-               <td class="">Email</td>
-               <td>{{ me.email }}</td>
+               <td class=""><img class="contact-icon" src="{{ asset('images/email.svg') }}" alt="Email"></td>
+               <td><a href="mailto:{{ me.email }}">{{ me.email }}</a></td>
             </tr>
             <tr>
-               <td class="">Dirección</td>
+               <td class=""><img class="contact-icon" src="{{ asset('images/address.svg') }}" alt="Dirección"></td>
                <td>{{ me.address }}</td>
             </tr>
             <tr>
-               <td class="">LinkedIn</td>
-               <td>{{ me.linkedin }}</td>
-            </tr>
-            <tr>
-               <td class="">GitHub</td>
-               <td>{{ me.github }}</td>
+               <td class=""></td>
+               <td>
+                  <a href="{{ me.linkedin }}" target="_blank"><img class="external-link" src="{{ asset('images/linkedin.svg') }}" alt="LinkedIn"></a>
+                  <a href="{{ me.github }}" target="_blank"><img class="external-link" src="{{ asset('images/github.svg') }}" alt="GitHub"></a>
             </tr>
             <tr>
                <td class=""></td>
