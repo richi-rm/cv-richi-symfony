@@ -1,4 +1,18 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
+
+    header .photo {
+        display: block;
+        position: absolute;
+        left: calc(50% - 440px);
+        top: 40px;
+    }
+
+    header .photo img {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        border: solid 3px white;
+    }
 
     header .intro .intro-name {
         font-size: 1.9em;

@@ -27,6 +27,14 @@ td {
     padding: 5px;
 }
 
+header {
+    position: relative;
+}
+
+header .photo {
+    display: none;
+}
+
 header .intro {
     background-color: #323b4c;
     padding: 20px;
