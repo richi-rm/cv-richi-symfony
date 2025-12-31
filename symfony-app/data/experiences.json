@@ -1,6 +1,9 @@
 {
   "experienceProasa": {
-    "company": "PROASA",
+    "company": {
+      "name": "Proasa",
+      "url": "https://proasa.org"
+    },
     "city": "Córdoba",
     "startDate": "1997_11",
     "endDate": "1998_01",
@@ -12,7 +15,10 @@
     ]
   },
   "experienceKingSilver": {
-    "company": "King Silver",
+    "company": {
+      "name": "King Silver",
+      "url": "https://www.infoindustrias.com"
+    },
     "city": "Córdoba",
     "startDate": "1998_06",
     "endDate": "2003_06",
@@ -25,7 +31,10 @@
     ]
   },
   "experienceUco": {
-    "company": "Rectorado de la Universidad de Córdoba",
+    "company": {
+      "name": "Universidad de Córdoba",
+      "url": "https://www.uco.es"
+    },
     "city": "Córdoba",
     "startDate": "2006_06",
     "endDate": "2010_04",
@@ -39,7 +48,10 @@
     ]
   },
   "experienceBilbomatica": {
-    "company": "Bilbomática",
+    "company": {
+      "name": "Bilbomática",
+      "url": "https://www.bilbomatica.es"
+    },
     "city": "Madrid",
     "startDate": "2010_06",
     "endDate": "2013_04",
@@ -55,7 +67,10 @@
     ]
   },
   "experienceSermicro": {
-    "company": "Grupo SERMICRO",
+    "company": {
+      "name": "Sermicro",
+      "url": "https://gruposermicro.com"
+    },
     "city": "Madrid",
     "startDate": "2013_06",
     "endDate": "2014_07",
@@ -69,7 +84,10 @@
     ]
   },
   "experienceSms": {
-    "company": "Grupo SMS",
+    "company": {
+      "name": "Sms",
+      "url": "https://www.sms-europa.com"
+    },
     "city": "Madrid",
     "startDate": "2014_11",
     "endDate": "2015_04",
@@ -79,7 +97,10 @@
     ]
   },
   "experienceNateevo": {
-    "company": "NATEEVO",
+    "company": {
+      "name": "Nateevo",
+      "url": "https://nateevo.com"
+    },
     "city": "Alcobendas, Madrid",
     "startDate": "2015_09",
     "endDate": "2024_04",
