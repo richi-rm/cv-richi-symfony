@@ -102,7 +102,7 @@ main .content .section .section-title {
 }
 
 main .content .section .section-title a.previous {
-    background-color: #b0b0b0;
+    background-color: #6d7e9e;
     color: white;
     padding: 5px;
     border-radius: 20px;
@@ -112,8 +112,12 @@ main .content .section .section-title a.previous {
     text-decoration: none;
 }
 
+main .content .section .section-title a.previous:hover {
+    background-color: #323b4c;
+}
+
 main .content .section .section-title a.next {
-    background-color: #b0b0b0;
+    background-color: #6d7e9e;
     color: white;
     padding: 5px;
     border-radius: 20px;
@@ -121,6 +125,10 @@ main .content .section .section-title a.next {
     right: -30px;
     top: 30px;
     text-decoration: none;
+}
+
+main .content .section .section-title a.next:hover {
+    background-color: #323b4c;
 }
 
 main .content .section .section-content .contact img.contact-icon {
