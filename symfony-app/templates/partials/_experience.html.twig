@@ -1,8 +1,9 @@
 <div class="section">
    <div class="section-title center">
       {% if (experience.index > 0) %}<a class="previous" href="" data-action="click->render#render" data-url="{{ path('app_experience', {'index':experience.index-1}) }}">&nbsp;&lt;&lt;&nbsp;</a>{% endif %}
-      <b>Experiencia en <a href="{{ experience.company.url }}" target="_blank" rel="noopener noreferrer">{{ experience.company.name }}</a></b><br />
-      <span class="location">{{ experience.city }} ({{ experience.startDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }} - {% if experience.endDate == '' %}Actualmente{% else %}{{ experience.endDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }}{% endif %})</span>
+      Experiencia en <a href="{{ experience.company.url }}" target="_blank" rel="noopener noreferrer">{{ experience.company.name }}</a><br />
+      <span class="date-range no-bold">{{ experience.startDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }} - {% if experience.endDate == '' %}Actualmente{% else %}{{ experience.endDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }}{% endif %}</span><br />
+      <span class="date-range no-bold">{{ experience.city }}</span>
       {% if (experience.index < experiencesLastIndex) %}<a class="next" href="" data-action="click->render#render" data-url="{{ path('app_experience', {'index':experience.index+1}) }}">&nbsp;&gt;&gt;&nbsp;</a>{% endif %}
    </div>
    <div class="section-content">
