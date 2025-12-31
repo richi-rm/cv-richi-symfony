@@ -1,13 +1,19 @@
 {
   "educationItis": {
-    "degree": "Ingeniero Técnico en Informática de Sistemas",
-    "institution": "Escuela Politécnica Superior de la Universidad de Córdoba",
+    "degree": "Ingeniero Téc. en Informática",
+    "institution": {
+      "name": "Esc. Politécnica Sup. de la Univ. Córdoba",
+      "url": "https://www.uco.es/eps"
+    },
     "startDate": "2003_09",
     "endDate": "2008_10"
   },
   "educationTrainingIt": {
     "degree": "Curso de Symfony 4 Experto",
-    "institution": "Training IT",
+    "institution": {
+      "name": "Training IT",
+      "url": "https://www.trainingit.es"
+    },
     "startDate": "2018_11",
     "endDate": "2018_12"
   }
