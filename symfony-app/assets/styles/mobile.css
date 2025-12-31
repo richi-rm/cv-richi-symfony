@@ -72,8 +72,8 @@ header ul.nav-menu li {
 }
 
 header ul.nav-menu li a {
-    background-color: #323b4c;
-    border-radius: 10px;
+    background-color: #6d7e9e;
+    border-radius: 10px 10px 0 0;
     color: white;
     text-decoration: none;
     font-family: sans-serif;
