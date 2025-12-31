@@ -21,25 +21,60 @@
             CURRICULUM VITAE
          </div>
 
-         <nav>
-            <ul class="nav-menu">
-               <li>
-                   <a href="" data-action="click->render#render" data-url="{{ path('app_partial', {'name':'profile'}) }}">Presentación</a>
-               </li>
-               <li>
-                   <a href="" data-action="click->render#render" data-url="{{ path('app_experiences') }}">Experiencia</a>
-               </li>
-               <li>
-                   <a href="" data-action="click->render#render" data-url="{{ path('app_education') }}">Formación</a>
-               </li>
-               <li>
-                   <a href="" data-action="click->render#render" data-url="{{ path('app_contact') }}">Contacto</a>
-               </li>
-               <li class="hide-mobile">
-                   <a href="" data-action="click->render#render" data-url="{{ path('app_partial', {'name':'pdf'}) }}">PDF</a>
-               </li>
-            </ul>
-         </nav>
+         <div class="mobile">
+
+            <nav>
+               <ul class="nav-menu">
+                  <li>
+                      <a href="" data-action="click->render#render" data-url="{{ path('app_partial', {'name':'profile'}) }}">Presentación</a>
+                  </li>
+                  <li>
+                      <a href="" data-action="click->render#render" data-url="{{ path('app_experiences') }}">Experiencia</a>
+                  </li>
+               </ul>
+            </nav>
+
+            <nav>
+               <ul class="nav-menu">
+                  <li>
+                      <a href="" data-action="click->render#render" data-url="{{ path('app_education') }}">Formación</a>
+                  </li>
+                  <li>
+                      <a href="" data-action="click->render#render" data-url="{{ path('app_contact') }}">Contacto</a>
+                  </li>
+               </ul>
+            </nav>
+
+         </div>
+
+         <div class="desktop">
+
+            <nav>
+               <ul class="nav-menu">
+                  <li>
+                      <a href="" data-action="click->render#render" data-url="{{ path('app_partial', {'name':'profile'}) }}">Presentación</a>
+                  </li>
+                  <li>
+                      <a href="" data-action="click->render#render" data-url="{{ path('app_experiences') }}">Experiencia</a>
+                  </li>
+                  <li>
+                      <a href="" data-action="click->render#render" data-url="{{ path('app_education') }}">Formación</a>
+                  </li>
+               </ul>
+            </nav>
+
+            <nav>
+               <ul class="nav-menu">
+                  <li>
+                      <a href="" data-action="click->render#render" data-url="{{ path('app_contact') }}">Contacto</a>
+                  </li>
+                  <li>
+                      <a href="" data-action="click->render#render" data-url="{{ path('app_partial', {'name':'pdf'}) }}">PDF</a>
+                  </li>
+               </ul>
+            </nav>
+
+         </div>
 
       </header>
 

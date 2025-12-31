@@ -1,4 +1,8 @@
-.hide-mobile {
+.mobile {
+    display: block;
+}
+
+.desktop {
     display: none;
 }
 
@@ -57,23 +61,27 @@ header ul.nav-menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 7px;
     list-style: none;
+    gap: 13px;
     padding: 0;
-    margin: 13px 0 13px 0;
+    margin: 10px 0 0 0;
 }
 
 header ul.nav-menu li {
+    width: 120px;
 }
 
 header ul.nav-menu li a {
-    background-color: #b0b0b0;
+    background-color: #323b4c;
     border-radius: 10px;
     color: white;
-    padding: 10px;
     text-decoration: none;
-    transition: background-color 0.8s ease;
-    font-size: 0.6em;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: block;
+    width: 120px;
+    text-align: center;
+    padding: 3px;
 }
 
 header ul.nav-menu li a:hover {
