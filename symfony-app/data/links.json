@@ -1,0 +1,29 @@
+{
+
+  "aldeasinfantiles": "https://www.aldeasinfantiles.es",
+  "bbva": "https://www.bbva.es",
+  "cocacola": "https://www.cocacolaep.com",
+  "hacienda": "https://www.hacienda.gob.es",
+  "mapfre": "https://www.fundacionmapfre.org",
+  "telecor": "https://www.telecor.es",
+
+  "qdump": "https://packagist.org/packages/richirm/qdump",
+
+  "css": "https://www.w3.org/Style/CSS",
+  "docker": "https://www.docker.com",
+  "drupal": "https://new.drupal.org",
+  "gemini": "https://gemini.google.com",
+  "gimp": "https://www.gimp.org",
+  "git": "https://git-scm.com",
+  "html": "https://html.spec.whatwg.org/multipage",
+  "inkscape": "https://inkscape.org",
+  "javascript": "https://developer.mozilla.org/es/docs/Web/JavaScript",
+  "mysql": "https://www.mysql.com",
+  "php": "https://www.php.net",
+  "sublimemerge": "https://www.sublimemerge.com",
+  "sublimetext": "https://www.sublimetext.com",
+  "symfony": "https://symfony.com",
+  "wordpress": "https://wordpress.com",
+  "zend": "https://framework.zend.com"
+
+}
