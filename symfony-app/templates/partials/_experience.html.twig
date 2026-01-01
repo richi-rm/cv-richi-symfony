@@ -6,6 +6,9 @@
       <span class="date-range no-bold">{{ experience.city }}</span>
       {% if (experience.index < experiencesLastIndex) %}<a class="next" href="" data-action="click->render#render" data-url="{{ path('app_experience', {'index':experience.index+1}) }}">&nbsp;&gt;&gt;&nbsp;</a>{% endif %}
    </div>
+   <div class="section-separator center">
+      <img src="{{ asset('images/left-arrow.svg') }}" width="20" height="20"><img class="line" src="{{ asset('images/separator.svg') }}" height="20"><img src="{{ asset('images/right-arrow.svg') }}" width="20" height="20">
+   </div>
    <div class="section-content">
       <div class="experience">
          <div class="job-title">Trabajé como <b>{{ experience.jobTitle }}</b>.</div>

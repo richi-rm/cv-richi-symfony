@@ -94,11 +94,9 @@ main .content {
 }
 
 main .content .section .section-title {
-    border-bottom: solid 1px;
-    padding: 10px;
     position: relative;
     font-weight: bold;
-    margin: 20px;
+    margin-top: 25px;
 }
 
 main .content .section .section-title a.previous {
@@ -107,8 +105,8 @@ main .content .section .section-title a.previous {
     padding: 5px;
     border-radius: 20px;
     position: absolute;
-    left: -30px;
-    top: 30px;
+    left: 0px;
+    top: 40px;
     text-decoration: none;
 }
 
@@ -122,13 +120,21 @@ main .content .section .section-title a.next {
     padding: 5px;
     border-radius: 20px;
     position: absolute;
-    right: -30px;
-    top: 30px;
+    right: 0px;
+    top: 40px;
     text-decoration: none;
 }
 
 main .content .section .section-title a.next:hover {
     background-color: #323b4c;
+}
+
+main .content .section .section-separator {
+    margin: 20px 0 20px 0;
+}
+
+main .content .section .section-separator .line {
+    width: calc(100% - 100px);
 }
 
 main .content .section .section-content .contact img.contact-icon {
