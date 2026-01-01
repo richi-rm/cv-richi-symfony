@@ -30,7 +30,9 @@ class CVController extends AbstractController
         if (!file_exists($projectDir . '/templates/partials/_' . $name . '.html.twig')) {
             $name = 'profile';
         }
-        return $this->render("partials/_{$name}.html.twig");
+        return $this->render("partials/_{$name}.html.twig", [
+            'links' => $this->dataReader->read('links')
+        ]);
     }
 
     #[Route('/experiences', name: 'app_experiences')]
