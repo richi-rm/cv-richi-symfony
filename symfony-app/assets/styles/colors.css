@@ -2,5 +2,6 @@
   --primary: #754a05;
   --secondary: #e2a645;
   --text: #65625d;
-  --text-over-dark-bg: white;
+  --text-over-dark-bg: #fceed8;
+  --light-bg: #fceed8;
 }

@@ -19,7 +19,8 @@
         width: 200px;
         height: 200px;
         border-radius: 100px;
-        border: solid 3px white;
+        border: solid 3px;
+        border-color: var(--light-bg);
     }
 
     header .intro .intro-name {
