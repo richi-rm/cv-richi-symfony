@@ -73,7 +73,7 @@ header ul.nav-menu li {
 
 header ul.nav-menu li a {
     background-color: var(--secondary);
-    border-radius: 10px 10px 0 0;
+    border-radius: 6px 6px 0 0;
     color: var(--text-over-dark-bg);
     text-decoration: none;
     font-family: sans-serif;
