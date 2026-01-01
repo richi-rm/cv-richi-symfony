@@ -60,13 +60,13 @@
     "startDate": "2010_06",
     "endDate": "2013_04",
     "jobTitle": "PHP Developer",
-    "description": "Trabajé desarrollando evolutivos, corrigiendo bugs y construyendo sites desde cero usando PHP, Zend Framework 1 y Subversion. Trabajé en la aplicación ACCEDA del Ministerio de Hacienda y Administraciones Públicas. También construí desde cero, con Symfony 2, dos aplicaciones para hacer encuestas a los ayuntamientos de España, sobre su equipamiento tecnológico (aplicaciones IRIA y CAE).",
+    "description": "Trabajé desarrollando evolutivos, corrigiendo bugs y construyendo sites desde cero usando PHP, Zend Framework y Subversion. Trabajé en la aplicación Acceda del Ministerio de Hacienda y Administraciones Públicas. También construí desde cero, con Symfony 2, dos aplicaciones para hacer encuestas a los ayuntamientos de España, sobre su equipamiento tecnológico (aplicaciones Iria y Cae).",
     "technologies": [
       "PHP",
       "MySQL",
       "JavaScript",
-      "Zend Framework 1",
-      "Symfony 2",
+      "Zend Framework",
+      "Symfony",
       "Subversion"
     ]
   },
@@ -80,11 +80,11 @@
     "startDate": "2013_06",
     "endDate": "2014_07",
     "jobTitle": "PHP Developer",
-    "description": "Trabajé en el desarrollo de una aplicación web (un dashboard / cuadro de mandos) construida sobre PHP y Symfony 2 para medir las ventas de teléfonos móviles en las distintas tiendas de la empresa Telecor (Grupo El Corte Inglés).",
+    "description": "Trabajé en el desarrollo de una aplicación web (un dashboard / cuadro de mandos) construida sobre Symfony para medir las ventas de teléfonos móviles en las distintas tiendas de la empresa Telecor (Grupo El Corte Inglés).",
     "technologies": [
       "PHP",
       "MySQL",
-      "Symfony 2",
+      "Symfony",
       "Subversion"
     ]
   },
@@ -98,7 +98,7 @@
     "startDate": "2014_11",
     "endDate": "2015_04",
     "jobTitle": "Webapp Analyst",
-    "description": "Trabajé en el diseño de una aplicación web (PHP, Symfony) y su base de datos (MySQL) para llevar un control centralizado de las líneas telefónicas y de telecomunicaciones de los colegios y hospitales públicos de la Comunidad de Madrid, gestionadas por la Agencia de Informática y Comunicaciones de la Comunidad de Madrid.",
+    "description": "Trabajé en el diseño de una aplicación web Symfony y su base de datos MySQL  para llevar un control centralizado de las líneas telefónicas y de telecomunicaciones de los colegios y hospitales públicos de la Comunidad de Madrid, gestionadas por la Agencia de Informática y Comunicaciones de la Comunidad de Madrid.",
     "technologies": [
     ]
   },
@@ -112,7 +112,7 @@
     "startDate": "2015_09",
     "endDate": "2024_04",
     "jobTitle": "PHP Developer",
-    "description": "Mis funciones en NATEEVO fueron las de desarrollar evolutivos, corregir bugs y desarrollar sites desde cero, construida la parte back sobre PHP, WordPress o Drupal. Trabajé en webs de clientes importantes como: Aldeas Infantiles, BBVA, Coca-Cola European Partners o MAPFRE.",
+    "description": "Mis funciones en Nateevo fueron las de desarrollar evolutivos, corregir bugs y desarrollar sites desde cero, construida la parte back sobre Symfony, Zend, PHP plano, WordPress o Drupal. Trabajé en webs de clientes importantes como Aldeas Infantilesf, BBVA, Coca-Cola European Partners o Fundación Mapfre.",
     "technologies": [
       "PHP",
       "MySQL",
