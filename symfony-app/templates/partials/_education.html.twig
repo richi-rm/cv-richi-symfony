@@ -6,14 +6,26 @@
       <img src="{{ asset('images/left-arrow.svg') }}" width="20" height="20"><img class="line" src="{{ asset('images/separator.svg') }}" height="20"><img src="{{ asset('images/right-arrow.svg') }}" width="20" height="20">
    </div>
    <div class="section-content">
-      <ul class="education">
+      <div class="mobile">
+         <ul class="education">
+            {% for educationItem in education %}
+            <li class="education-item">
+               <span class="degree">{{ educationItem.degree }}</span><br />
+               <span class="date-range">{{ educationItem.startDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }} - {{ educationItem.endDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }}</span><br />
+               <span class="date-range"><a href="{{ educationItem.institution.url }}" target="_blank" rel="noopener noreferrer">{{ educationItem.institution.name }}</a></span>
+            </li>
+            {% endfor %}
+         </ul>
+      </div>
+      <div class="desktop">
          {% for educationItem in education %}
-         <li class="education-item">
-            <span class="degree">{{ educationItem.degree }}</span><br />
+         <div class="center">
+            <span class="bold">{{ educationItem.degree }}</span><br />
             <span class="date-range">{{ educationItem.startDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }} - {{ educationItem.endDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }}</span><br />
-            <span class="date-range"><a href="{{ educationItem.institution.url }}" target="_blank" rel="noopener noreferrer">{{ educationItem.institution.name }}</a></span>
-         </li>
+            <span class="date-range"><a href="{{ educationItem.institution.url }}" target="_blank" rel="noopener noreferrer">{{ educationItem.institution.name }}</a></span><br />
+            <br />
+         </div>
          {% endfor %}
-      </ul>
+      </div>
    </div>
 </div>

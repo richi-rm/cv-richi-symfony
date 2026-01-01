@@ -6,14 +6,23 @@
       <img src="{{ asset('images/left-arrow.svg') }}" width="20" height="20"><img class="line" src="{{ asset('images/separator.svg') }}" height="20"><img src="{{ asset('images/right-arrow.svg') }}" width="20" height="20">
    </div>
    <div class="section-content">
-      <ul class="experiences">
+      <div class="mobile">
+         <ul class="experiences">
+            {% for experience in experiences|reverse %}
+               <li><a href="" data-action="click->render#render" data-url="{{ path('app_experience', {'index':experience.index}) }}"><span class="bold">{{ experience.company.shortName }}</span> <span class="date-range">({{ experience.startDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }} - {% if experience.endDate == '' %}Actualmente){% else %}{{ experience.endDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }}{% endif %})</span></a></li>
+            {% endfor %}
+         </ul>
+      </div>
+      <div class="desktop">
          {% for experience in experiences|reverse %}
-            {% if experience.endDate == '' %}
-               <li><a class="bold" href="" data-action="click->render#render" data-url="{{ path('app_experience', {'index':experience.index}) }}"><span class="bold">{{ experience.company.name }}</span> ({{ experience.startDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }} - Actualmente)</a></li>
-            {% else %}
-               <li><a href="" data-action="click->render#render" data-url="{{ path('app_experience', {'index':experience.index}) }}"><span class="bold">{{ experience.company.name }}</span> <span class="date-range">({{ experience.startDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }} - {{ experience.endDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }})</span></a></li>
-            {% endif %}
+            <div class="center">
+               <a href="" data-action="click->render#render" data-url="{{ path('app_experience', {'index':experience.index}) }}">
+                  <span class="bold">{{ experience.company.longName }}</span><br />
+                  <span class="date-range">{{ experience.startDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }} - {% if experience.endDate == '' %}Actualmente){% else %}{{ experience.endDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }}{% endif %}</span><br />
+                  <br />
+               </a>
+            </div>
          {% endfor %}
-      </ul>
+      </div>
    </div>
 </div>

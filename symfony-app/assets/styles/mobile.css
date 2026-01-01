@@ -134,15 +134,20 @@ main .content .section .section-separator {
 }
 
 main .content .section .section-separator .line {
-    width: calc(100% - 100px);
+    width: calc(100% - 40px);
 }
 
-main .content .section .section-content .contact img.contact-icon {
+main .content .section .section-content table.contact {
+    width: 300px;
+    margin: 0 auto;
+}
+
+main .content .section .section-content table.contact img.contact-icon {
     width: 20px;
     height: 20px;
 }
 
-main .content .section .section-content .contact img.external-link-icon {
+main .content .section .section-content table.contact img.external-link-icon {
     width: 20px;
     height: 20px;
     margin: 5px;
