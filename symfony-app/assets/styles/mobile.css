@@ -12,7 +12,7 @@
 
 body {
     background-color: white;
-    color: #4e5e80;
+    color: var(--text);
     font-family: 'Merriweather', serif;
     font-size: 15px;
     font-weight: 400;
@@ -21,7 +21,7 @@ body {
 }
 
 a {
-    color: #6183d0;
+    color: var(--secondary);
     text-decoration: none;
 }
 
@@ -48,9 +48,9 @@ header .photo {
 }
 
 header .intro {
-    background-color: #323b4c;
+    background-color: var(--primary);
     padding: 20px;
-    color: white;
+    color: var(--text-over-dark-bg);
 }
 
 header .intro .intro-name {
@@ -72,9 +72,9 @@ header ul.nav-menu li {
 }
 
 header ul.nav-menu li a {
-    background-color: #6d7e9e;
+    background-color: var(--secondary);
     border-radius: 10px 10px 0 0;
-    color: white;
+    color: var(--text-over-dark-bg);
     text-decoration: none;
     font-family: sans-serif;
     font-weight: bold;
@@ -85,7 +85,7 @@ header ul.nav-menu li a {
 }
 
 header ul.nav-menu li a:hover {
-    background-color: #323b4c;
+    background-color: var(--primary);
 }
 
 main .content {
@@ -100,8 +100,8 @@ main .content .section .section-title {
 }
 
 main .content .section .section-title a.previous {
-    background-color: #6d7e9e;
-    color: white;
+    background-color: var(--secondary);
+    color: var(--text-over-dark-bg);
     padding: 5px;
     border-radius: 20px;
     position: absolute;
@@ -111,12 +111,12 @@ main .content .section .section-title a.previous {
 }
 
 main .content .section .section-title a.previous:hover {
-    background-color: #323b4c;
+    background-color: var(--primary);
 }
 
 main .content .section .section-title a.next {
-    background-color: #6d7e9e;
-    color: white;
+    background-color: var(--secondary);
+    color: var(--text-over-dark-bg);
     padding: 5px;
     border-radius: 20px;
     position: absolute;
@@ -126,7 +126,7 @@ main .content .section .section-title a.next {
 }
 
 main .content .section .section-title a.next:hover {
-    background-color: #323b4c;
+    background-color: var(--primary);
 }
 
 main .content .section .section-separator {
@@ -142,9 +142,9 @@ main .content .section .section-content .contact img.contact-icon {
     height: 20px;
 }
 
-main .content .section .section-content .contact img.external-link {
-    width: 30px;
-    height: 30px;
+main .content .section .section-content .contact img.external-link-icon {
+    width: 20px;
+    height: 20px;
     margin: 5px;
 }
 
