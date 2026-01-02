@@ -1,8 +1,3 @@
-@import "fonts.css";
-@import "colors.css";
-@import "mobile.css";
-@import "desktop.css";
-
 .bold {
     font-weight: bold;
 }

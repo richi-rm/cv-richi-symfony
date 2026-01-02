@@ -19,8 +19,11 @@ class CVController extends AbstractController
     #[Route('/cv', name: 'app_cv')]
     public function cv(): Response
     {
+        $themes = ['blue', 'green', 'honey', 'php', 'red'];
+
         return $this->render('cv.html.twig', [
-            'me' => ($me = $this->dataReader->read('me'))
+            'me' => ($me = $this->dataReader->read('me')),
+            'theme' => $themes[array_rand($themes)]
         ]);
     }
 
