@@ -9,7 +9,7 @@
       <div class="mobile">
          <ul class="experiences">
             {% for experience in experiences|reverse %}
-               <li><a href="" data-action="click->render#render" data-url="{{ path('app_experience', {'index':experience.index}) }}"><span class="bold">{{ experience.company.shortName }}</span> <span class="date-range">({{ experience.startDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }} - {% if experience.endDate == '' %}Actualmente){% else %}{{ experience.endDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }}{% endif %})</span></a></li>
+               <li><a href="" data-action="click->render#render" data-url="{{ path('app_experience', {'index':experience.index}) }}"><span class="bold">{{ experience.company.shortName }}</span> <span class="date-range">({{ experience.startDate|replace({'_': '-'})|format_datetime(pattern="MMM yyyy", locale="es")|capitalize }} - {% if experience.endDate == '' %}Actualmente){% else %}{{ experience.endDate|replace({'_': '-'})|format_datetime(pattern="MMM yyyy", locale="es")|capitalize }}{% endif %})</span></a></li>
             {% endfor %}
          </ul>
       </div>
