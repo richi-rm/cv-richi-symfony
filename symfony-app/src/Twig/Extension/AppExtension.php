@@ -23,6 +23,7 @@ class AppExtension extends AbstractExtension
     {
         return [
             new TwigFunction('external_link', [AppExtensionRuntime::class, 'externalLink'], ['is_safe' => ['html']]),
+            new TwigFunction('separator', [AppExtensionRuntime::class, 'separator'], ['is_safe' => ['html']]),
         ];
     }
 }

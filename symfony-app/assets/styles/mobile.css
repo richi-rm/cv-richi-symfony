@@ -89,8 +89,8 @@ header ul.nav-menu li {
 
 header ul.nav-menu li a {
     background-color: var(--secondary);
-    border-radius: 6px 6px 0 0;
     color: var(--text-over-dark-bg);
+    border-radius: 6px 6px 0 0;
     text-decoration: none;
     font-family: 'Zalando Sans SemiExpanded';
     font-weight: bold;
@@ -150,8 +150,16 @@ main .content .section .section-separator {
     margin: 20px 0 0 0;
 }
 
-main .content .section .section-separator .line {
+main .content .section .section-separator svg.separator-marker {
+    stroke: var(--text);
+    width: 20px;
+    height: 20px;
+}
+
+main .content .section .section-separator svg.separator-line {
+    stroke: var(--text);
     width: calc(100% - 40px);
+    height: 20px;
 }
 
 main .content .section .section-content {
@@ -174,9 +182,16 @@ main .content .section .section-content .contact .row .left {
     height: 20px;
 }
 
-main .content .section .section-content .contact .row .left img.contact-icon {
+main .content .section .section-content .contact .row .left svg.contact-icon {
     width: 20px;
     height: 20px;
+    fill: var(--text);
+}
+
+main .content .section .section-content .contact .row .right a svg.contact-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--secondary);
 }
 
 main .content .section .section-content .contact .row .right {
@@ -188,13 +203,14 @@ main .content .section .section-content .contact .row .right {
     margin-bottom: 10px;
 }
 
-main .content .section .section-content .contact .row .right a.no-external-arrow {
-    margin-right: 10px;
+main .content .section .section-content .pdf a svg.download-pdf {
+    width: 100px;
+    height: 100px;
+    fill: var(--secondary);
 }
 
-main .content .section .section-content .contact .row .right img.external-link-icon {
-    width: 20px;
-    height: 20px;
+main .content .section .section-content .contact .row .right a.no-external-arrow {
+    margin-right: 10px;
 }
 
 main .content .section .section-content ul.education {
