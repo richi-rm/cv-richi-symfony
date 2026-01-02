@@ -6,32 +6,12 @@
       <img src="{{ asset('images/left-arrow.svg') }}" width="20" height="20"><img class="line" src="{{ asset('images/separator.svg') }}" height="20"><img src="{{ asset('images/right-arrow.svg') }}" width="20" height="20">
    </div>
    <div class="section-content">
-      <table class="contact">
-         <tbody>
-            <tr>
-               <td class=""><img class="contact-icon" src="{{ asset('images/phone.svg') }}" alt="Teléfono"></td>
-               <td>{{ me.phone }}</td>
-            </tr>
-            <tr>
-               <td class=""><img class="contact-icon" src="{{ asset('images/email.svg') }}" alt="Email"></td>
-               <td><a href="mailto:{{ me.email }}">{{ me.email }}</a></td>
-            </tr>
-            <tr>
-               <td class=""><img class="contact-icon" src="{{ asset('images/address.svg') }}" alt="Dirección"></td>
-               <td>{{ me.address }}</td>
-            </tr>
-            <tr>
-               <td class=""></td>
-               <td>
-                  <a class="no-external" href="{{ me.linkedin }}" target="_blank" rel="noopener noreferrer"><img class="external-link-icon" src="{{ asset('images/linkedin.svg') }}" alt="LinkedIn"></a>
-                  <a class="no-external" href="{{ me.github }}" target="_blank" rel="noopener noreferrer"><img class="external-link-icon" src="{{ asset('images/github.svg') }}" alt="GitHub"></a>
-               </td>
-            </tr>
-            <tr>
-               <td class=""></td>
-               <td class="italic">"{{ me.motto }}"</td>
-            </tr>
-         </tbody>
-      </table>
+      <div class="contact">
+         <div class="row"><div class="left"><img class="contact-icon" src="{{ asset('images/phone.svg') }}" alt="Teléfono"></div><div class="right">{{ me.phone }}</div></div>
+         <div class="row"><div class="left"><img class="contact-icon" src="{{ asset('images/email.svg') }}" alt="Email"></div><div class="right"><a href="mailto:{{ me.email }}">{{ me.email }}</a></div></div>
+         <div class="row"><div class="left"><img class="contact-icon" src="{{ asset('images/address.svg') }}" alt="Dirección"></div><div class="right">{{ me.address }}</div></div>
+         <div class="row"><div class="left"></div><div class="right"><a class="no-external-arrow" href="{{ me.linkedin }}" target="_blank" rel="noopener noreferrer"><img class="external-link-icon" src="{{ asset('images/linkedin.svg') }}" alt="LinkedIn"></a><a class="no-external-arrow" href="{{ me.github }}" target="_blank" rel="noopener noreferrer"><img class="external-link-icon" src="{{ asset('images/github.svg') }}" alt="GitHub"></a></div></div>
+         <div class="row"><div class="left"></div><div class="right"><span class="italic">"{{ me.motto }}"</span></div></div>
+      </div>
    </div>
 </div>
