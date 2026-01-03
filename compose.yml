@@ -11,9 +11,11 @@ services:
     image: nginx:alpine
     container_name: cv-richi-symfony-nginx
     ports:
-      - "8080:80"
+      - "${HTTP_HOST_PORT}:80"
+      - "${HTTPS_HOST_PORT}:443"
     volumes:
       - ./config/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+      - /etc/letsencrypt:/etc/letsencrypt:ro
       - ./symfony-app:/var/www/html
     depends_on:
       - php
