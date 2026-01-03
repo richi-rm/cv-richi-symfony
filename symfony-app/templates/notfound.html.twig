@@ -1,0 +1,47 @@
+{# templates/notfound.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+   <link rel="stylesheet" href="{{ asset('styles/fonts.css') }}">
+   <link rel="stylesheet" href="{{ asset('styles/colors-' ~ theme ~ '.css') }}">
+   <link rel="stylesheet" href="{{ asset('styles/mobile.css') }}">
+   <link rel="stylesheet" href="{{ asset('styles/desktop.css') }}">
+{% endblock %}
+
+{% block title %}Página no encontrada{% endblock %}
+
+{% block body %}
+
+   <div {{ stimulus_controller('render') }}>
+
+      <header>
+
+         <div class="photo">
+            <img src="{{ asset('images/ricardo-ruiz-martinez.jpg') }}" alt="{{ me.name }}" />
+         </div>
+
+         <div class="intro center">
+            <span class="intro-name">{{ me.name }}</span><br />
+            {{ me.title }}<br />
+            <br />
+            <span class="curriculum-vitae">Curriculum Vitae</span>
+         </div>
+
+      </header>
+
+      <main>
+
+         <section class="content" data-render-target="content">
+            {{ include('partials/_notfound.html.twig') }}
+         </section>
+
+      </main>
+
+      <footer>
+
+      </footer>
+
+   </div>
+
+{% endblock %}

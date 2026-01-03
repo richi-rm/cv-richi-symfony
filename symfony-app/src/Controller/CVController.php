@@ -11,19 +11,29 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class CVController extends AbstractController
 {
+    private $theme;
 
     public function __construct(private DataReader $dataReader)
     {
+        $themes = ['blue', 'green', 'honey', 'php', 'red'];
+        $this->theme = $themes[array_rand($themes)];
+    }
+
+    #[Route('/notfound', name: 'app_notfound')]
+    public function notFound(): Response
+    {
+        return $this->render('notfound.html.twig', [
+            'me' => $this->dataReader->read('me'),
+            'theme' => $this->theme
+        ]);
     }
 
     #[Route('/cv', name: 'app_cv')]
     public function cv(): Response
     {
-        $themes = ['blue', 'green', 'honey', 'php', 'red'];
-
         return $this->render('cv.html.twig', [
-            'me' => ($me = $this->dataReader->read('me')),
-            'theme' => $themes[array_rand($themes)]
+            'me' => $this->dataReader->read('me'),
+            'theme' => $this->theme
         ]);
     }
 
