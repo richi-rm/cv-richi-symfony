@@ -116,30 +116,28 @@ main .content .section .section-title {
     margin-top: 25px;
 }
 
-main .content .section .section-title a.previous {
+main .content .section .section-title a.previous, main .content .section .section-title a.next {
     background-color: var(--secondary);
     color: var(--text-over-dark-bg);
-    padding: 5px;
-    border-radius: 20px;
     position: absolute;
-    left: 0px;
-    top: 40px;
+    bottom: 0px;
     text-decoration: none;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+main .content .section .section-title a.previous {
+    left: 0px;
+}
+
+main .content .section .section-title a.next {
+    right: 0px;
 }
 
 main .content .section .section-title a.previous:hover {
     background-color: var(--primary);
-}
-
-main .content .section .section-title a.next {
-    background-color: var(--secondary);
-    color: var(--text-over-dark-bg);
-    padding: 5px;
-    border-radius: 20px;
-    position: absolute;
-    right: 0px;
-    top: 40px;
-    text-decoration: none;
 }
 
 main .content .section .section-title a.next:hover {
