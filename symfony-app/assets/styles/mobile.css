@@ -203,7 +203,7 @@ main .content .section .section-content .contact .row .right {
     margin-bottom: 10px;
 }
 
-main .content .section .section-content .pdf a svg.download-pdf {
+main .content .section .section-content a svg.big-icon {
     width: 100px;
     height: 100px;
     fill: var(--secondary);
