@@ -12,6 +12,7 @@
    </div>
    <div class="section-content">
       <div class="mobile">
+         Empezando por la más reciente:
          <ul class="experiences">
             {% for experience in experiences|reverse %}
                <li><a href="" data-action="click->render#render" data-url="{{ path('app_experience', {'index':experience.index}) }}"><span class="bold">{{ experience.company.shortName }}</span> <span class="date-range">({{ experience.startDate|replace({'_': '-'})|format_datetime(pattern="MMM yyyy", locale="es")|capitalize }} - {% if experience.endDate == '' %}Actualmente){% else %}{{ experience.endDate|replace({'_': '-'})|format_datetime(pattern="MMM yyyy", locale="es")|capitalize }}{% endif %})</span></a></li>
@@ -19,6 +20,10 @@
          </ul>
       </div>
       <div class="desktop">
+         <div class="center">
+            Empezando por la más reciente:<br />
+            <br />
+         </div>
          {% for experience in experiences|reverse %}
             <div class="center">
                <a href="" data-action="click->render#render" data-url="{{ path('app_experience', {'index':experience.index}) }}">
