@@ -37,10 +37,12 @@ class CVController extends AbstractController
     #[Route('/notfound', name: 'app_notfound')]
     public function notFound(): Response
     {
-        return $this->render('notfound.html.twig', [
+        $response = $this->render('notfound.html.twig', [
             'me' => $this->dataReader->read('me'),
             'theme' => $this->theme
         ]);
+        $response->setStatusCode(Response::HTTP_NOT_FOUND);
+        return $response;
     }
 
     #[Route('/cv', name: 'app_cv')]
