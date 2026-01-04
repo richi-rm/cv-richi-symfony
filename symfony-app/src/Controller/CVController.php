@@ -34,17 +34,6 @@ class CVController extends AbstractController
         $this->theme = $themes[array_rand($themes)];
     }
 
-    #[Route('/notfound', name: 'app_notfound')]
-    public function notFound(): Response
-    {
-        $response = $this->render('notfound.html.twig', [
-            'me' => $this->dataReader->read('me'),
-            'theme' => $this->theme
-        ]);
-        $response->setStatusCode(Response::HTTP_NOT_FOUND);
-        return $response;
-    }
-
     #[Route('/cv', name: 'app_cv')]
     public function cv(Request $request): Response
     {
