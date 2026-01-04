@@ -3,11 +3,13 @@
       {% if (experience.index > 0) %}<a class="previous" href="" data-action="click->render#render" data-url="{{ path('app_experience', {'index':experience.index-1}) }}">&lt;</a>{% endif %}
       <div class="mobile">
          Experiencia en {{ external_link(experience.company.url, experience.company.shortName) }}<br />
+         <span class="date-range no-bold">{{ experience.startDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }} - {% if experience.endDate == '' %}Actualmente{% else %}{{ experience.endDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }}{% endif %}</span><br />
+         <span class="date-range no-bold">({{ period(experience.startDate, experience.endDate) }})</span><br />
       </div>
       <div class="desktop">
          Experiencia en {{ external_link(experience.company.url, experience.company.longName) }}<br />
+         <span class="date-range no-bold">{{ experience.startDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }} - {% if experience.endDate == '' %}Actualmente{% else %}{{ experience.endDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }}{% endif %} ({{ period(experience.startDate, experience.endDate) }})</span><br />
       </div>
-      <span class="date-range no-bold">{{ experience.startDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }} - {% if experience.endDate == '' %}Actualmente{% else %}{{ experience.endDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }}{% endif %}</span><br />
       <span class="date-range no-bold">{{ experience.city }}</span>
       {% if (experience.index < experiencesLastIndex) %}<a class="next" href="" data-action="click->render#render" data-url="{{ path('app_experience', {'index':experience.index+1}) }}">&gt;</a>{% endif %}
    </div>
