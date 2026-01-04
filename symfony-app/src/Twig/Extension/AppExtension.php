@@ -15,7 +15,7 @@ class AppExtension extends AbstractExtension
             // If your filter generates SAFE HTML, you should add a third
             // parameter: ['is_safe' => ['html']]
             // Reference: https://twig.symfony.com/doc/3.x/advanced.html#automatic-escaping
-            new TwigFilter('filter_name', [AppExtensionRuntime::class, 'doSomething']),
+            // new TwigFilter('filter_name', [AppExtensionRuntime::class, 'doSomething']),
         ];
     }
 
@@ -24,6 +24,7 @@ class AppExtension extends AbstractExtension
         return [
             new TwigFunction('external_link', [AppExtensionRuntime::class, 'externalLink'], ['is_safe' => ['html']]),
             new TwigFunction('separator', [AppExtensionRuntime::class, 'separator'], ['is_safe' => ['html']]),
+            new TwigFunction('period', [AppExtensionRuntime::class, 'period'])
         ];
     }
 }

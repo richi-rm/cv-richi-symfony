@@ -28,4 +28,37 @@ class AppExtensionRuntime implements RuntimeExtensionInterface
            '<svg class="separator-marker" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g transform="translate(-59.522 -100)"><g transform="matrix(-1 0 0 1 219.46 -6.2228)"><path transform="matrix(.31998 0 0 .31998 54.273 104.7)" d="m117.26 165.05c0.52662-15.319 16.741-24.149 30.657-21.986 21.108 3.2813 32.679 25.79 28.393 45.606-5.8162 26.891-34.877 41.293-60.555 34.799-32.681-8.2646-49.948-43.98-41.206-75.503 10.671-38.478 53.092-58.626 90.452-47.612 44.279 13.054 67.318 62.209 54.019 105.4-15.422 50.084-71.329 76.02-120.35 60.425-55.891-17.781-84.728-80.452-66.832-135.3 15.601-47.811 62.216-79.76 112.14-79.527" fill="none" stroke-width="17.65"/><path d="m100.28 121.13h59.666" stroke-width="5.6478"/></g></g></svg>'
         ;
     }
+
+    public function period(string $startDate, string $endDate): string
+    {
+        $startDate = explode('_', $startDate);
+        $endDate = explode('_', $endDate);
+        $startDateMonthIndex = $startDate[0] * 12 + $startDate[1] - 1;
+        $endDateMonthIndex = $endDate[0] * 12 + $endDate[1] - 1;
+
+        $months = $endDateMonthIndex - $startDateMonthIndex;
+        $years = intdiv($months, 12);
+        $months = $months % 12;
+        if ($years < 1) $months++;
+
+        $periodYears = '';
+        if ($years == 1) $periodYears = '1 año';
+        elseif ($years > 1) $periodYears = $years . ' años';
+
+        $periodMonths = '';
+        if ($months == 1) $periodMonths = '1 mes';
+        elseif ($months > 1) $periodMonths = $months . ' meses';
+
+        if (strlen($periodYears > 0) && strlen($periodMonths) > 0) {
+            $period = $periodYears . ' y ' . $periodMonths;
+        } elseif (strlen($periodYears > 0)) {
+            $period = $periodYears;
+        } elseif (strlen($periodMonths > 0)) {
+            $period = $periodMonths;
+        } else {
+            $period = '';
+        }
+
+        return $period;
+    }
 }
