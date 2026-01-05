@@ -3,11 +3,45 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{% block title %}{% endblock %}</title>
         <meta name="description" content="Desarrollador PHP Senior con más de 15 años de trayectoria, experto en PHP moderno y Symfony.">
         <meta name="robots" content="{% block robots %}index, follow{% endblock %}">
         <link rel="canonical" href="{{ app.request.schemeAndHttpHost }}">
         <link rel="icon" type="image/svg+xml" href="{{ asset('images/favicon.svg') }}">
+
+        <title>{% block title %}{% endblock %}</title>
+
+        <meta property="og:site_name" content="Ricardo Ruiz Martínez">
+        <meta property="og:title" content="Ricardo Ruiz Martínez - Senior PHP Engineer">
+        <meta property="og:image" content="{{ absolute_url(asset('images/cv-open-graph.png')) }}">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:image:type" content="image/png">
+
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "WebSite",
+                  "@id": "https://richiruizmartinez.es/#website",
+                  "url": "https://richiruizmartinez.es",
+                  "name": "Ricardo Ruiz Martínez",
+                  "publisher": { "@id": "https://richiruizmartinez.es/#person" }
+                },
+                {
+                  "@type": "Person",
+                  "@id": "https://richiruizmartinez.es/#person",
+                  "name": "Ricardo Ruiz Martínez",
+                  "image": "{{ absolute_url(asset('images/ricardo-ruiz-martinez.jpg')) }}",
+                  "sameAs": [
+                    "https://linkedin.com/in/ricardo-ruiz-martínez-ba4356354",
+                    "https://github.com/richi-rm"
+                  ]
+                }
+              ]
+            }
+        </script>
+
         {% block stylesheets %}
         {% endblock %}
         {% block javascripts %}
