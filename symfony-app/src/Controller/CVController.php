@@ -37,6 +37,11 @@ class CVController extends AbstractController
     #[Route('/cv', name: 'app_cv')]
     public function cv(Request $request): Response
     {
+        $last_page = $request->cookies->get('last_page');
+        if (!in_array($last_page, ['contact', 'education', 'experiences', 'pdf', 'profile'])) {
+            $last_page = 'welcome';
+        }
+
         $experiences = array_values($this->dataReader->read('experiences'));
         foreach ($experiences as $index => $experience) {
             $experiences[$index]['index'] = $index;
@@ -44,7 +49,7 @@ class CVController extends AbstractController
 
         return $this->render('cv.html.twig', [
             'theme' => $this->theme,
-            'last_page' => $request->cookies->get('last_page', 'welcome'),
+            'last_page' => $last_page,
             'me' => $this->dataReader->read('me'),
             // variables necesarias para todas las posibles plantillas
             'education' => $this->dataReader->read('education'),
