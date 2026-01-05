@@ -2,16 +2,16 @@
 
 {% extends 'base.html.twig' %}
 
+{% block robots %}noindex, nofollow{% endblock %}
+
+{% block title %}Página no encontrada{% endblock %}
+
 {% block stylesheets %}
    <link rel="stylesheet" href="{{ asset('styles/fonts.css') }}">
    <link rel="stylesheet" href="{{ asset('styles/colors-' ~ theme ~ '.css') }}">
    <link rel="stylesheet" href="{{ asset('styles/mobile.css') }}">
    <link rel="stylesheet" href="{{ asset('styles/desktop.css') }}">
 {% endblock %}
-
-{% block title %}Página no encontrada{% endblock %}
-
-{% block robots %}noindex, nofollow{% endblock %}
 
 {% block body %}
 
