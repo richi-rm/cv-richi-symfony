@@ -38,4 +38,11 @@
         margin: 0 auto;
     }
 
+    main .content .section .section-content .experiences-list .experience-list-item {
+        display: inline-block;
+        width: 193px;
+        margin: 10px 0 0 10px;
+        border: solid 2px var(--secondary);
+    }
+
 }
