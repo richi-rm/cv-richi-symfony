@@ -189,8 +189,8 @@ main .content .section .section-content .contact .row .left svg.contact-icon {
 }
 
 main .content .section .section-content .contact .row .right a svg.contact-icon {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     fill: var(--secondary);
 }
 
