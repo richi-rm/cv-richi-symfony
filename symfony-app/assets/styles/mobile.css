@@ -178,8 +178,9 @@ main .content .section .section-content .contact .row div {
 }
 
 main .content .section .section-content .contact .row .left {
-    width: 20px;
+    width: 40px;
     height: 20px;
+    text-align: center;
 }
 
 main .content .section .section-content .contact .row .left svg.contact-icon {
