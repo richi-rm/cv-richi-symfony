@@ -10,7 +10,7 @@
          Experiencia en {{ external_link(experience.company.url, experience.company.longName) }}<br />
          <span class="date-range no-bold">{{ experience.startDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }} - {% if experience.endDate == '' %}Actualmente{% else %}{{ experience.endDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }}{% endif %} ({{ period(experience.startDate, experience.endDate) }})</span><br />
       </div>
-      <span class="date-range no-bold">{{ experience.city }}</span>
+      <span class="date-range no-bold">{{ experience.city }}, España</span>
       {% if (experience.index < experiencesLastIndex) %}<a class="next" href="" data-action="click->render#render" data-url="{{ path('app_experience', {'index':experience.index+1}) }}">&gt;</a>{% endif %}
    </div>
    <div class="section-separator">
