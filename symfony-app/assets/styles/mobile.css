@@ -162,9 +162,8 @@ main .content .section .section-content {
 main .content .section .section-content .experiences-list .experience-list-item {
     margin-top: 10px;
     padding: 10px;
-    border: solid 2px var(--secondary);
-    border-radius: 3px;
-    border-bottom: none;
+    border-radius: 6px 6px 0 0;
+    background: linear-gradient(to bottom, white, var(--light-bg));
 }
 
 main .content .section .section-content .contact .row {
