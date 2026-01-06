@@ -25,7 +25,7 @@
     "startDate": "1998_06",
     "endDate": "2003_06",
     "jobTitle": "ASP & C Developer",
-    "description": "Desarrollé un portal web, usando ASP y Microsoft Access, cuyo cometido era publicitar empresas (una guía online de empresas). También desarrollé aplicaciones recolectoras de información en Internet (crawlers), programadas en C.",
+    "description": "Desarrollé un portal web público, activo actualmente, usando ASP y Microsoft Access. El cometido de este portal era publicitar empresas (una guía online de empresas). También desarrollé aplicaciones recolectoras de información en Internet (crawlers), programadas en C.",
     "technologies": [
       "ASP",
       "C",
@@ -42,7 +42,7 @@
     "startDate": "2006_06",
     "endDate": "2010_04",
     "jobTitle": "PHP Developer",
-    "description": "Desarrollé y mantuve una aplicación web PHP / MySQL para que los profesores de la Universidad pudiesen ofertar sus cursos extraacadémicos. También realicé algunos trabajos en Java y Visual Basic.",
+    "description": "Trabajé en el Rectorado de la Universidad, desarrollando y manteniendo una aplicación PHP / MySQL interna para que los profesores de la Universidad pudiesen ofertar sus cursos extraacadémicos. También colaboré en proyectos hechos en Java y Visual Basic.",
     "technologies": [
       "PHP",
       "MySQL",
@@ -60,7 +60,7 @@
     "startDate": "2010_06",
     "endDate": "2013_04",
     "jobTitle": "ZF & Symfony Developer",
-    "description": "Trabajé desarrollando evolutivos, corrigiendo bugs y construyendo sites desde cero usando PHP, Zend Framework y Subversion. Trabajé en la aplicación Acceda del Ministerio de Hacienda y Administraciones Públicas. También construí desde cero, con Symfony 2, dos aplicaciones para hacer encuestas a los ayuntamientos de España, sobre su equipamiento tecnológico (aplicaciones Iria y Cae).",
+    "description": "Trabajé desarrollando evolutivos, corrigiendo bugs y construyendo sites desde cero usando Zend Framework y Subversion. Trabajé en la aplicación Acceda del Ministerio de Hacienda y Administraciones Públicas. También construí, con Symfony, dos aplicaciones para hacer encuestas a los Ayuntamientos de España, sobre su equipamiento tecnológico (aplicaciones Iria y Cae).",
     "technologies": [
       "Zend Framework",
       "Symfony",
@@ -80,7 +80,7 @@
     "startDate": "2013_06",
     "endDate": "2014_07",
     "jobTitle": "Symfony Developer",
-    "description": "Trabajé en el desarrollo de una aplicación web (un dashboard / cuadro de mandos) construida sobre Symfony para medir las ventas de teléfonos móviles en las distintas tiendas de la empresa Telecor (Grupo El Corte Inglés).",
+    "description": "Trabajé en el desarrollo de una aplicación web (un dashboard / cuadro de mandos) construida sobre Symfony para medir las ventas de teléfonos móviles en las tiendas de Telecor (Grupo El Corte Inglés).",
     "technologies": [
       "Symfony",
       "MySQL",
@@ -97,7 +97,7 @@
     "startDate": "2014_11",
     "endDate": "2015_04",
     "jobTitle": "Webapp Analyst",
-    "description": "Trabajé en el diseño de una aplicación web Symfony y su base de datos MySQL  para llevar un control centralizado de las líneas telefónicas y de telecomunicaciones de los colegios y hospitales públicos de la Comunidad de Madrid, gestionadas por la Agencia de Informática y Comunicaciones de la Comunidad de Madrid.",
+    "description": "Trabajé en el diseño de una aplicación interna Symfony y su base de datos MySQL para llevar un control centralizado de las líneas telefónicas y de telecomunicaciones de los colegios y hospitales públicos de la Comunidad de Madrid, gestionadas por la Agencia de Informática y Comunicaciones de la Comunidad de Madrid.",
     "technologies": [
     ]
   },
@@ -111,7 +111,7 @@
     "startDate": "2015_09",
     "endDate": "2024_04",
     "jobTitle": "Senior Developer",
-    "description": "Mis funciones en Nateevo fueron las de desarrollar evolutivos, corregir bugs y desarrollar sites desde cero, construida la parte back sobre Symfony, Zend, PHP plano, WordPress o Drupal. Trabajé en webs de clientes importantes como Aldeas Infantiles, BBVA, Coca-Cola European Partners o Fundación Mapfre.",
+    "description": "Mis funciones en Nateevo fueron las de desarrollar evolutivos, corregir bugs y desarrollar sites, construida la parte backend sobre Zend Framework, PHP plano o Symfony. También trabajé construyendo plugins para sites WordPress y manteniendo sites Drupal. Trabajé en proyectos de clientes importantes como Aldeas Infantiles, BBVA, Coca-Cola European Partners o Fundación Mapfre.",
     "technologies": [
       "Zend Framework",
       "Symfony",
