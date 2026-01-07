@@ -34,7 +34,12 @@
     header ul.nav-menu {
     }
 
+    header ul.nav-menu li {
+        width: 200px;
+    }
+
     header ul.nav-menu li a {
+        width: 200px;
     }
 
     main .content {
