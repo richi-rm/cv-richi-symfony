@@ -60,6 +60,7 @@ header .intro {
 
 header .intro .intro-name {
     font-size: 1.6em;
+    font-weight: bold;
 }
 
 header .intro .curriculum-vitae {
