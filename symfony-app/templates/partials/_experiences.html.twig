@@ -1,17 +1,12 @@
 <div class="section">
    <div class="section-title center">
-      <div class="mobile">
-         Experiencia profesional
-      </div>
-      <div class="desktop">
-         Empresas para las que he trabajado
-      </div>
+      Experiencia profesional
    </div>
    <div class="section-separator">
       {{ separator() }}
    </div>
    <div class="section-content">
-      Empezando por la más reciente:
+      He trabajado tanto para la Empresa Privada como para la Administración Pública. Experiencia profesional, empezando por la empresa más reciente:
       <div class="experiences-list">{% for experience in experiences|reverse %}<div class="experience-list-item center"><a href="" data-action="click->render#render" data-url="{{ path('app_experience', {'index':experience.index}) }}"><span class="bold">{{ experience.company.longName }}</span></a><br /><span class="date-range">{{ experience.startDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }} - {% if experience.endDate == '' %}Actualmente){% else %}{{ experience.endDate|replace({'_': '-'})|format_datetime(pattern="MMMM yyyy", locale="es")|capitalize }}{% endif %}</span><br /><span class="date-range">{{ experience.city}}, España</span></div>{% endfor %}</div>
    </div>
 </div>
