@@ -47,6 +47,12 @@
         margin: 0 auto;
     }
 
+    main .content .section .section-title a.previous, main .content .section .section-title a.next {
+        width: 35px;
+        height: 35px;
+        border-radius: 14px;
+    }
+
     main .content .section .section-content .experiences-list .experience-list-item {
         display: inline-block;
         margin: 10px 0 0 10px;
