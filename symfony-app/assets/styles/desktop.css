@@ -46,6 +46,9 @@
         display: inline-block;
         margin: 10px 0 0 10px;
         width: 195px;
+
+    footer {
+        height: 80px;
     }
 
 }
