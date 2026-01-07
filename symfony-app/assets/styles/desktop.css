@@ -50,7 +50,8 @@
     main .content .section .section-content .experiences-list .experience-list-item {
         display: inline-block;
         margin: 10px 0 0 10px;
-        width: 195px;
+        width: 220px; /* (800-20*2-10*4-10*6)/3 = 220 */
+    }
 
     footer {
         height: 80px;
