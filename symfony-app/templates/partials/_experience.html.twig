@@ -18,7 +18,8 @@
    </div>
    <div class="section-content">
       <div class="experience">
-         <div class="job-title">Trabajé como <b>{{ experience.jobTitle }}</b>.</div>
+         <div class="job">{{ experience.company.description }}</div>
+         <div class="job">Trabajé como <span class="bold">{{ experience.jobTitle }}</span>.</div>
          <div class="description">{{ experience.description }}</div>
          {% if experience.technologies is not empty %}<div class="technologies">Tecnologías y herramientas usadas: <span class="bold">{{ experience.technologies|join(', ') }}.</span></div>{% endif %}
       </div>

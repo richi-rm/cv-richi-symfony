@@ -3,6 +3,7 @@
     "company": {
       "shortName": "Proasa",
       "longName": "Proasa",
+      "description": "Proasa es una asesoría y consultoría de empresas.",
       "url": "https://proasa.org"
     },
     "city": "Córdoba",
@@ -19,6 +20,7 @@
     "company": {
       "shortName": "King Silver",
       "longName": "King Silver",
+      "description": "King Silver se dedica a publicitar en su portal web a empresas nacionales.",
       "url": "https://www.infoindustrias.com"
     },
     "city": "Córdoba",
@@ -29,13 +31,16 @@
     "technologies": [
       "ASP",
       "C",
-      "Microsoft Access"
+      "Microsoft Access",
+      "Corel Draw",
+      "Corel PhotoPaint"
     ]
   },
   "experienceUco": {
     "company": {
       "shortName": "Uni. Córdoba",
       "longName": "Universidad de Córdoba",
+      "description": "",
       "url": "https://www.uco.es"
     },
     "city": "Córdoba",
@@ -54,6 +59,7 @@
     "company": {
       "shortName": "Bilbomática",
       "longName": "Bilbomática",
+      "description": "Bilbomática es una empresa de soluciones digitales.",
       "url": "https://www.bilbomatica.es"
     },
     "city": "Madrid",
@@ -74,6 +80,7 @@
     "company": {
       "shortName": "Sermicro",
       "longName": "Sermicro",
+      "description": "Grupo Sermicro es un grupo multinacional de empresas de soluciones TI y de comunicaciones.",
       "url": "https://gruposermicro.com"
     },
     "city": "Madrid",
@@ -91,6 +98,7 @@
     "company": {
       "shortName": "Sms",
       "longName": "Sms",
+      "description": "Sms es una empresa multinacional dedicada a la consultoría y desarrollo de soluciones digitales.",
       "url": "https://www.sms-europa.com"
     },
     "city": "Madrid",
@@ -105,6 +113,7 @@
     "company": {
       "shortName": "Nateevo",
       "longName": "Nateevo",
+      "description": "Nateevo es una empresa perteneciente al Grupo Vass, dedicada al marketing digital.",
       "url": "https://nateevo.com"
     },
     "city": "Madrid",
