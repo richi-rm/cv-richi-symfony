@@ -6,6 +6,7 @@ export default class extends Controller {
 
     async render(event) {
         event.preventDefault();
+        window.scrollTo(0, 0);
         const url = event.currentTarget.dataset.url;
         try {
             // alert(url);

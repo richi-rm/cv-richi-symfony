@@ -68,34 +68,44 @@ header .intro .curriculum-vitae {
     text-transform: uppercase;
 }
 
-header ul.nav-menu {
+main .main-menu {
+    background-color: var(--light-bg);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding-top: 10px;
+}
+
+
+main ul.nav-menu {
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
     gap: 16px;
     padding: 0;
-    margin: 10px 0 0 0;
+    margin: 0;
 }
 
-header ul.nav-menu li {
+main ul.nav-menu li {
     width: 120px;
+    padding-bottom: 10px;
 }
 
-header ul.nav-menu li a {
+main ul.nav-menu li a {
     background-color: var(--secondary);
     color: var(--text-over-dark-bg);
     border-radius: 6px 6px 0 0;
     text-decoration: none;
     font-family: 'Zalando Sans SemiExpanded';
     font-weight: bold;
-    display: block;
+    display: inline-block;
     width: 120px;
     text-align: center;
     padding: 3px;
 }
 
-header ul.nav-menu li a:hover {
+main ul.nav-menu li a:hover {
     background-color: var(--primary);
 }
 

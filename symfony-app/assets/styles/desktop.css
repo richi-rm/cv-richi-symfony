@@ -17,6 +17,7 @@
         position: absolute;
         left: calc(50% - 540px);
         top: 70px;
+        z-index: 1001;
     }
 
     header .photo img {
@@ -31,14 +32,15 @@
         font-size: 1.9em;
     }
 
-    header ul.nav-menu {
+    main .main-menu {
+        position: static;
     }
 
-    header ul.nav-menu li {
+    main ul.nav-menu li {
         width: 200px;
     }
 
-    header ul.nav-menu li a {
+    main ul.nav-menu li a {
         width: 200px;
     }
 
